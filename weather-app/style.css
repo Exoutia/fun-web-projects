@@ -73,14 +73,12 @@ body {
   height: 50%;
 }
 
-
 .details {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
   padding: 0 20px;
 }
-
 
 .col img {
   width: auto;
@@ -90,5 +88,19 @@ body {
 .details div {
   margin-top: 1em;
 }
+
+.weather {
+  display: none;
+}
+
+.city-error {
+  display: none;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 40px;
+  background: rgba(255, 20, 20, 0.2);
+
+}
+
 
 

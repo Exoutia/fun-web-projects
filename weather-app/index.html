@@ -13,6 +13,9 @@
         <input type="text" placeholder="enter city name" spellcheck="false" />
         <button><img src="images/search.png" alt="" /></button>
       </div>
+      <div class="city-error">
+        <h2>City not found</h2>
+      </div>
       <div class="weather">
         <img
           src="images/rain.png"
@@ -50,6 +53,13 @@
 
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
         const response = await fetch(apiUrl);
+
+        if (response.status === 404) {
+          document.querySelector(".weather").style.display = "none";
+          document.querySelector(".city-error").style.display = "block";
+          return;
+        }
+
         let data = await response.json();
 
         document.querySelector(".city").innerHTML = data.name;
@@ -59,9 +69,10 @@
         document.querySelector(".wind").innerHTML = data.wind.speed;
         const weatherCondition = data.weather[0].main;
 
-        weatherIcon.src = `./images/${weatherCondition.toLowerCase()}.png`
-        console.log(data)
+        weatherIcon.src = `./images/${weatherCondition.toLowerCase()}.png`;
+        document.querySelector(".weather").style.display = "block";
 
+        document.querySelector(".city-error").style.display = "none";
       }
 
       searchBtn.addEventListener("click", () => {
