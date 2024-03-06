@@ -13,3 +13,8 @@ I will create 30 projects everyday one project it will not be very big and will 
 
 - Today I created a simple note taking app using html css and javascript
 - [x] note taking app done.
+
+## 2024-03-06
+
+- Today I created a simple todo taking app using html css and javascript.
+- [x] todo app done.
