@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Note Taking App</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="note-taking-app">
+      <h2>
+        Note Taking App
+        <img src="./images/note_icon.jpg" alt="Icon for note taking app." />
+      </h2>
+
+      <div class="add-info-box">
+        <input id="title-input" type="text" placeholder="Enter title" />
+        <textarea id="content-input" rows="5" cols="30"></textarea>
+        <button onclick="addNote()">Add</button>
+      </div>
+
+      <ul id="note-container">
+        <!-- <li> -->
+        <!--   <h3>First Note</h3> -->
+        <!--   <p>This is first note</p> -->
+        <!-- </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

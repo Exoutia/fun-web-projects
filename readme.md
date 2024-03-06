@@ -8,3 +8,8 @@ I will create 30 projects everyday one project it will not be very big and will 
 
 - Today I will make a weather app.
 - [x] weather app done
+
+## 2024-03-05
+
+- Today I created a simple note taking app using html css and javascript
+- [x] note taking app done.
