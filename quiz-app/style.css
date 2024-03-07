@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global colors in catpuccin frappe */
+:root {
+  --surface: #232634;
+  --sub-surface: #393b4d;
+  --primary: #626880;
+  --secondary: #81c8be;
+  --tertiary: #e78284;
+  --quaternary: #c792ea;
+}
+
+body {
+  background: var(--surface);
+  color: #e1e1e6;
+}
+
+.app {
+  background: var(--sub-surface);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 640px;
+  margin: 100px auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+.app h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quiz .answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quiz .answers button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+  background: var(--sub-surface);
+  border-radius: 5px;
+  border: none;
+  outline: var(--primary) solid 2px;
+  color: #e1e1e6;
+}
+
+.quiz .answers button:hover:not([disabled]) {
+  background: rgba(98, 104, 128, 0.5);
+  color: white;
+}
+
+.quiz .answers button:disabled {
+  background: var(--sub-surface);
+  color: #e1e1e6;
+  cursor: no-drop;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.next-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+}
+
+.next-btn:hover {
+  background: var(--quaternary);
+  color: var(--surface);
+}
+
+.quiz .answers .correct {
+  outline: var(--secondary) solid 2px;
+}
+
+
+.quiz .answers .incorrect {
+  outline: var(--tertiary) solid 2px;
+}
