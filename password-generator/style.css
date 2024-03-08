@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #bebebe;
+  color: #001;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  max-width: 700px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.75);
+}
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  width: 100%;
+  margin: 20px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-group .button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-group .button-group button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  max-width: 125px;
+}
+
+#copy {
+  background-color: #4caf50;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#copy span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#copy:hover {
+  background-color: #45a049;
+}
+
+#generate {
+  background-color: #2196f3;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#generate span {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#generate:hover {
+  background-color: #0b7dda;
+}
+
+
