@@ -23,3 +23,8 @@ I will create 30 projects everyday one project it will not be very big and will 
 
 - Today I create a simple quiz application which can test your skill and designed it carefully.
 - [x] quiz app done.
+
+## 2024-03-08
+
+- Toady I created a simple random password generator using css, html and javascript.
+- [x] password generator done.
