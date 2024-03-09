@@ -28,3 +28,8 @@ I will create 30 projects everyday one project it will not be very big and will 
 
 - Toady I created a simple random password generator using css, html and javascript.
 - [x] password generator done.
+
+## 2024-03-09
+
+- Toady I created a simple age calculator in html css and javascript.
+- [x] Age calculator done.
