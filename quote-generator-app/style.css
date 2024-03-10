@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: #bbc6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: 40px;
+  margin: 100px auto;
+  padding-bottom: 60px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.app h1::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #000;
+  margin: 15px auto;
+}
+
+
+.app .quote {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+.app .quote blockquote {
+  font-size: 1.2rem;
+  margin: 20px;
+}
+
+.app .quote blockquote::before{
+  content: "“";
+  color: #000;
+}
+.app .quote blockquote::after {
+  content: "”";
+  color: #000;
+}
+.app #author {
+  font-size: 1.0rem;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.app button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
