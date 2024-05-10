@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cef;
+}
+
+.main {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app .value-input {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 50px;
+}
+
+.app .value-input .single-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.app .value-input label {
+  font-size: 1.2rem;
+}
+
+.app .value-input input {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  border: none;
+  outline: solid 1px transparent;
+  background-color: #f3f3f3;
+  outline-color: #d3d3d3;
+}
+
+.app .value-input button {
+  padding: 15px;
+  max-width: 200px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  background-color: #3394fe;
+  font-size: 1.1rem;
+}
+
+.value-input button:hover {
+  background-color: blue;
+}
+
+.app .output {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.app .output .val {
+ color: #4444ff; 
+}
+
+
