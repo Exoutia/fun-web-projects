@@ -18,7 +18,7 @@ function totalReturns() {
   }
 
   document.getElementById("total-returns").innerText = futureValue.toFixed(0);
-  return futureValue;
+  return futureValue.toFixed(0);
 }
 
 function estimatedReturns() {
@@ -27,12 +27,52 @@ function estimatedReturns() {
   console.log(total);
   console.log(original);
   document.getElementById("estimated-returns").innerText = (total - original).toFixed(0);
+  return (total - original)
+}
+
+function drawMutualFundPieChart(mutualFundData) {
+  const canvas = document.getElementById("pie");
+  const ctx = canvas.getContext('2d');
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const radius = Math.min(centerX, centerY);
+
+  // Calculate angles for amount invested and amount gained
+  const totalValue = mutualFundData.amountInvested + mutualFundData.amountGained;
+  const amountInvestedAngle = (mutualFundData.amountInvested / totalValue) * (2 * Math.PI);
+  const amountGainedAngle = (mutualFundData.amountGained / totalValue) * (2 * Math.PI);
+
+  // Draw slices for amount invested and amount gained
+  drawSlice(ctx, centerX, centerY, radius, 0, amountInvestedAngle, 'Amount Invested', 'blue');
+  drawSlice(ctx, centerX, centerY, radius, amountInvestedAngle, amountInvestedAngle + amountGainedAngle, 'Amount Gained', 'green');
+}
+
+// Function to draw a pie slice
+function drawSlice(ctx, centerX, centerY, radius, startAngle, endAngle, label, color) {
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.moveTo(centerX, centerY);
+  ctx.arc(centerX, centerY, radius, startAngle, endAngle);
+  ctx.closePath();
+  ctx.fill();
+
+  // Draw legend text
+  ctx.fillStyle = 'black';
+  const legendX = centerX + (radius + 20) * Math.cos((startAngle + endAngle) / 2);
+  const legendY = centerY + (radius + 20) * Math.sin((startAngle + endAngle) / 2);
+  ctx.fillText(label, legendX, legendY);
 }
 
 function calculateAllVal() {
-  totalInvestment();
+  let original = totalInvestment();
   totalReturns();
-  estimatedReturns();
+  let profit = estimatedReturns();
+
+  const mutualFundData = {
+    amountInvested: original,
+    amountGained: profit
+  }
+  drawMutualFundPieChart(mutualFundData);
 }
 
 calculateAllVal()

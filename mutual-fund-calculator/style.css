@@ -74,13 +74,18 @@ h1 {
   background-color: blue;
 }
 
-.app .output {
+.app .output .written {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .app .output .val {
  color: #4444ff; 
+}
+
+.app .output {
+  display: flex;
+  justify-content: space-between;
 }
 
 
