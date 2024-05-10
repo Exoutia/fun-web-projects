@@ -79,13 +79,18 @@ h1 {
   flex-direction: column;
   gap: 20px;
 }
+
 .app .output .val {
- color: #4444ff; 
+  color: #4444ff;
 }
 
 .app .output {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-
+.app .output .draw {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

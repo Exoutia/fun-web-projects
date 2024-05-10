@@ -43,8 +43,8 @@ function drawMutualFundPieChart(mutualFundData) {
   const amountGainedAngle = (mutualFundData.amountGained / totalValue) * (2 * Math.PI);
 
   // Draw slices for amount invested and amount gained
-  drawSlice(ctx, centerX, centerY, radius, 0, amountInvestedAngle, 'Amount Invested', 'blue');
-  drawSlice(ctx, centerX, centerY, radius, amountInvestedAngle, amountInvestedAngle + amountGainedAngle, 'Amount Gained', 'green');
+  drawSlice(ctx, centerX, centerY, radius, 0, amountInvestedAngle, 'Amount Invested', '#45efef');
+  drawSlice(ctx, centerX, centerY, radius, amountInvestedAngle, amountInvestedAngle + amountGainedAngle, 'Amount Gained', '#434389');
 }
 
 // Function to draw a pie slice
@@ -60,7 +60,7 @@ function drawSlice(ctx, centerX, centerY, radius, startAngle, endAngle, label, c
   ctx.fillStyle = 'black';
   const legendX = centerX + (radius + 20) * Math.cos((startAngle + endAngle) / 2);
   const legendY = centerY + (radius + 20) * Math.sin((startAngle + endAngle) / 2);
-  ctx.fillText(label, legendX, legendY);
+  // ctx.fillText(label, legendX, legendY);
 }
 
 function calculateAllVal() {
