@@ -39,3 +39,9 @@ I will create 30 projects everyday one project it will not be very big and will 
 - Toady I created a simple daily quote generator app.
 - I have used api quotable.
 - [x] Quote Generator Done.
+
+## 2024-04-10
+
+- Toady I created a simple mutual sip return calculator.
+- I have used api quotable.
+- [x] SIP return Calculator.
