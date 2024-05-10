@@ -17,7 +17,7 @@ function totalReturns() {
     futureValue += sip * Math.pow(1 + rate, timeInMonths - i);
   }
 
-  document.getElementById("total-returns").innerText = futureValue.toFixed(2);
+  document.getElementById("total-returns").innerText = futureValue.toFixed(0);
   return futureValue;
 }
 
@@ -26,7 +26,7 @@ function estimatedReturns() {
   var original = totalInvestment();
   console.log(total);
   console.log(original);
-  document.getElementById("estimated-returns").innerText = (total - original).toFixed(2);
+  document.getElementById("estimated-returns").innerText = (total - original).toFixed(0);
 }
 
 function calculateAllVal() {
@@ -36,3 +36,6 @@ function calculateAllVal() {
 }
 
 calculateAllVal()
+
+const caluculateBtn = document.getElementById("calculateVals");
+caluculateBtn.addEventListener("click", calculateAllVal);
