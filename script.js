@@ -6,7 +6,7 @@ projects = [
   },
   {
     title: "Quiz Application",
-    description: "This is a application to test your knowledge of different capitals of nation.",
+    description: "Do you know which planet is called 'Blue Planet'? If you know then you can try this quiz application.",
     link: "./quiz-app/"
   },
   {
