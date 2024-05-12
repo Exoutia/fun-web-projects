@@ -1,37 +1,37 @@
 projects = [
   {
     title: "Todo Application",
-    description: "A simple todo application built using HTML, CSS and JavaScript",
+    description: "This is a simple todo application that can help you take down some task for your day. It is built using HTML, CSS and JavaScript.",
     link: "./todo-app/"
   },
   {
     title: "Quiz Application",
-    description: "A simple quiz application built using HTML, CSS and JavaScript",
+    description: "This is a application to test your knowledge of different capitals of nation.",
     link: "./quiz-app/"
   },
   {
     title: "Note Taking Application",
-    description: "A simple note taking application built using HTML, CSS and JavaScript",
+    description: "A simple note taking application that will store you notes in your browser local storage.",
     link: "./note-taking-app/"
   },
   {
     title: "Password Generator",
-    description: "A simple password generator built using HTML, CSS and JavaScript",
+    description: "This will help you generate strong password so that you will never get hacked again.",
     link: "./password-generator/"
   },
   {
     title: "Mutual Fund SIP Return Calculator",
-    description: "A simple mutual fund SIP return calculator built using HTML, CSS and JavaScript",
+    description: "Do you always want to know how much you will earn if you do a SIP of some fixed amount, no need to wait anymore. Check this out.",
     link: "./mutual-fund-calculator/"
   },
   {
     title: "Age Calculator",
-    description: "A simple age calculator built using HTML, CSS and JavaScript",
+    description: "Know your age if you know the birthday. This is a simple age calculator built using HTML, CSS and JavaScript.",
     link: "./age-calculator/"
   },
   {
     title: "Quote Generator",
-    description: "A simple quote generator built using HTML, CSS and JavaScript",
+    description: "A quote a day keeps....I think I am saying quote wrong, check this out to know the correct quotes by people.",
     link: "./quote-generator-app/"
   }
 ]

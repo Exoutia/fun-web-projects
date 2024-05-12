@@ -35,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  max-width: 300px;
+  justify-content: space-between;
 }
 
 .glassy-card:hover {
