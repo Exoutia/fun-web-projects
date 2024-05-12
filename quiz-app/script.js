@@ -1,38 +1,92 @@
 const questions = [
   {
-    question: "What is 10 + 10?",
+    question: "What is the largest organ in the human body?",
     answers: [
-      { text: "20", correct: true },
-      { text: "30", correct: false },
-      { text: "40", correct: false },
-      { text: "50", correct: false }
+      { text: "Heart", correct: false },
+      { text: "Liver", correct: false },
+      { text: "Skin", correct: true },
+      { text: "Brain", correct: false }
     ]
   },
   {
-    question: "What is 20 - 10?",
+    question: "Which country is the largest by land area?",
     answers: [
-      { text: "10", correct: true },
-      { text: "20", correct: false },
-      { text: "30", correct: false },
-      { text: "40", correct: false }
+      { text: "China", correct: false },
+      { text: "Russia", correct: true },
+      { text: "United States", correct: false },
+      { text: "Canada", correct: false }
     ]
   },
   {
-    question: "What is 10 * 10?",
+    question: "What is the chemical symbol for water?",
     answers: [
-      { text: "100", correct: true },
-      { text: "200", correct: false },
-      { text: "300", correct: false },
-      { text: "400", correct: false }
+      { text: "Wa", correct: false },
+      { text: "H2O", correct: true },
+      { text: "O2", correct: false },
+      { text: "HO", correct: false }
     ]
   },
   {
-    question: "What is 10 / 10?",
+    question: "What is the capital of France?",
     answers: [
-      { text: "1", correct: true },
-      { text: "2", correct: false },
-      { text: "3", correct: false },
-      { text: "4", correct: false }
+      { text: "Berlin", correct: false },
+      { text: "Madrid", correct: false },
+      { text: "Rome", correct: false },
+      { text: "Paris", correct: true }
+    ]
+  },
+  {
+    question: "Who painted the Mona Lisa?",
+    answers: [
+      { text: "Vincent van Gogh", correct: false },
+      { text: "Leonardo da Vinci", correct: true },
+      { text: "Pablo Picasso", correct: false },
+      { text: "Claude Monet", correct: false }
+    ]
+  },
+  {
+    question: "What is the chemical symbol for gold?",
+    answers: [
+      { text: "Ag", correct: false },
+      { text: "Au", correct: true },
+      { text: "Fe", correct: false },
+      { text: "Hg", correct: false }
+    ]
+  },
+  {
+    question: "Which planet is known as the 'Blue Planet'?",
+    answers: [
+      { text: "Venus", correct: false },
+      { text: "Mars", correct: false },
+      { text: "Earth", correct: true },
+      { text: "Neptune", correct: false }
+    ]
+  },
+  {
+    question: "Who wrote 'Romeo and Juliet'?",
+    answers: [
+      { text: "William Shakespeare", correct: true },
+      { text: "Charles Dickens", correct: false },
+      { text: "Jane Austen", correct: false },
+      { text: "Mark Twain", correct: false }
+    ]
+  },
+  {
+    question: "What is the smallest bone in the human body?",
+    answers: [
+      { text: "Stapes", correct: true },
+      { text: "Femur", correct: false },
+      { text: "Humerus", correct: false },
+      { text: "Radius", correct: false }
+    ]
+  },
+  {
+    question: "What is the only mammal capable of sustained flight?",
+    answers: [
+      { text: "Bat", correct: true },
+      { text: "Bird", correct: false },
+      { text: "Dragonfly", correct: false },
+      { text: "Penguin", correct: false }
     ]
   }
 ];

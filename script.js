@@ -36,15 +36,19 @@ projects = [
   }
 ]
 
-const projectsDiv = document.getElementById("projects");
 
-projects.forEach(project => {
-  const card = document.createElement("div");
-  card.innerHTML = `
+function createCard(projects) {
+  const projectsDiv = document.getElementById("projects");
+  projects.forEach(project => {
+    const card = document.createElement("div");
+    card.innerHTML = `
     <h2>${project.title}</h2>
     <p>${project.description}</p>
     <a href="${project.link}">View Project</a>
   `;
-  card.classList.add("glassy-card");
-  projectsDiv.appendChild(card);
-})
+    card.classList.add("glassy-card");
+    projectsDiv.appendChild(card);
+  })
+}
+
+createCard(projects);
