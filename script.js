@@ -33,6 +33,11 @@ projects = [
     title: "Quote Generator",
     description: "A quote a day keeps....I think I am saying quote wrong, check this out to know the correct quotes by people.",
     link: "./quote-generator-app/"
+  },
+  {
+    title: "Tax Calculator",
+    description: "A tax calculator for you salary bracked for indian financial year 2024-25",
+    link: "./indian-tax-calculator-2024/"
   }
 ]
 
