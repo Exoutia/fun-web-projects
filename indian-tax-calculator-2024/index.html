@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tax Calculator</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tax Calculator</h1>
+      <div class="input">
+        <input
+          type="text"
+          id="numbermask"
+          oninput="addComma()"
+          placeholder="Enter your salary"
+        />
+        <button type="button" onclick="calculateTax()">Calculate</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Salary Bracket</th>
+            <th>Percentage old ( % )</th>
+            <th>Percentage new ( % )</th>
+            <th>According to new</th>
+            <th>According to old</th>
+          </tr>
+        </thead>
+        <tbody class="tbody"></tbody>
+      </table>
+      <h5>
+        Note: *This tax is calculated based on just pure percentage and no deduction is
+        added except for that standard deduction according to regime. If you use
+        different strategies you may be able to save more tax.
+      </h5>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
